@@ -1,14 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Passion+One:700');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:700|Didact+Gothic');
 button{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
 }
-.row{
-    margin-right: 0;
-    margin-left: 0;
-}
+
 body {
-    background-image: url("../images/back.png");
-    font-family: 'Lato', sans-serif;
+    font-family: 'Didact Gothic', sans-serif;
     background: white;
 }
 ul{
@@ -21,28 +18,117 @@ ul{
     padding-right: 0;
 }
 
-/*.navbar-brand{*/
-    /*font-family: 'Passion One', cursive;*/
-    /*font-weight: 400;*/
-    /*letter-spacing: .1rem;*/
-    /*font-size: 2rem;*/
-    /*padding-bottom: 1%;*/
-/*}*/
 .donate{
-    padding-right: 20%;
-}
-.bg-dark {
-    border-bottom: 5px solid #28a745;
+    padding-right: 10%;
 }
 .logo{
     width: 100%;
-    max-width: 500px;
-
+    max-width: 350px;
 }
 .pad{
-    padding-left: 5%;
-    padding-right: 5%;
+    background-color: white;
 }
+.more{
+    margin-right: 2%;
+}
+.btn{
+    display:block;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1.9rem;
+    line-height: 1.5;
+    letter-spacing: .2rem;
+    border-radius: .25rem;
+    transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    background-color: transparent;
+}
+a:hover {
+    text-decoration: none;
+}
+
+.menu{
+    width: 100%;
+    position: relative;
+    min-width: 30px;
+    max-width: 30px;
+
+}
+.hide{
+    opacity: 0;
+}
+.wobble:hover {
+    -webkit-animation: wobble-hor-bottom 0.8s both;
+    animation: wobble-hor-bottom 0.8s both;
+}
+@-webkit-keyframes wobble-hor-bottom {
+    0%,
+    100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+    15% {
+        -webkit-transform: translateX(-30px) rotate(-6deg);
+        transform: translateX(-30px) rotate(-6deg);
+    }
+    30% {
+        -webkit-transform: translateX(15px) rotate(6deg);
+        transform: translateX(15px) rotate(6deg);
+    }
+    45% {
+        -webkit-transform: translateX(-15px) rotate(-3.6deg);
+        transform: translateX(-15px) rotate(-3.6deg);
+    }
+    60% {
+        -webkit-transform: translateX(9px) rotate(2.4deg);
+        transform: translateX(9px) rotate(2.4deg);
+    }
+    75% {
+        -webkit-transform: translateX(-6px) rotate(-1.2deg);
+        transform: translateX(-6px) rotate(-1.2deg);
+    }
+}
+@keyframes wobble-hor-bottom {
+    0%,
+    100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+    15% {
+        -webkit-transform: translateX(-30px) rotate(-6deg);
+        transform: translateX(-30px) rotate(-6deg);
+    }
+    30% {
+        -webkit-transform: translateX(15px) rotate(6deg);
+        transform: translateX(15px) rotate(6deg);
+    }
+    45% {
+        -webkit-transform: translateX(-15px) rotate(-3.6deg);
+        transform: translateX(-15px) rotate(-3.6deg);
+    }
+    60% {
+        -webkit-transform: translateX(9px) rotate(2.4deg);
+        transform: translateX(9px) rotate(2.4deg);
+    }
+    75% {
+        -webkit-transform: translateX(-6px) rotate(-1.2deg);
+        transform: translateX(-6px) rotate(-1.2deg);
+    }
+}
+
+
+
 /*end nav*/
 
 
@@ -322,10 +408,6 @@ label.error
         left: 2%;
         margin-right: 0;
     }
-    .more{
-        text-align: end;
-        padding-bottom: 3.5vh;
-    }
     .bg-dark {
         border-bottom: 10px solid #28a745;
     }
@@ -363,14 +445,10 @@ label.error
     }
 }
 @media (min-width: 1124px) {
-    .more{
-        margin-right: 2%;
-    }
+
 }
 @media (max-width: 1124px) {
-    .more{
-        margin-right: 5%;
-    }
+
 }
 @media (min-width: 992px) {
     .navbar-side{
@@ -383,6 +461,13 @@ label.error
 @media (max-width: 576px) {
     .lol {
         margin-top: 5%;
+    }
+    .btn{
+        font-size: 1.5rem;
+    }
+    .menu{
+        max-width: 20px;
+        min-width: 20px;
     }
 }
 
