@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Passion+One:700');
+button{
+    font-family: 'Lato', sans-serif;
+}
+.row{
+    margin-right: 0;
+    margin-left: 0;
+}
+body {
+    background-image: url("../images/back.png");
+    font-family: 'Lato', sans-serif;
+    background: white;
+}
+ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+/*nav*/
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/*.navbar-brand{*/
+    /*font-family: 'Passion One', cursive;*/
+    /*font-weight: 400;*/
+    /*letter-spacing: .1rem;*/
+    /*font-size: 2rem;*/
+    /*padding-bottom: 1%;*/
+/*}*/
+.donate{
+    padding-right: 20%;
+}
+.bg-dark {
+    border-bottom: 5px solid #28a745;
+}
+.logo{
+    width: 100%;
+    max-width: 500px;
+
+}
+.pad{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+/*end nav*/
+
+
+/*side menu*/
+.navbar-side {
+    height: 100%;
+    width: 25%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 0;
+    list-style: none;
+    border-left: 5px solid #28a745;
+    background-color: #343a40;
+    overflow-y: scroll;
+    z-index: 1000;
+}
+.navbar-side-item {
+    padding: 1.5rem 0;
+    margin: 0;
+    border-bottom: 2px solid #ccc;
+    height: 5rem;
+}
+.list-group-item:first-child{
+    border-top-right-radius: 0;
+}
+.list-group-item:last-child{
+    border-bottom-right-radius: 0;
+}
+.side-link {
+    padding-left: 2rem;
+}
+.navbar-side {
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: 300ms ease;
+    transition: 300ms ease;
+}
+.reveal {
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transition: 300ms ease;
+    transition: 300ms ease;
+}
+.overlay {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    background-color: #343a40;
+    opacity: 0.6;
+    z-index: 990;
+}
+.padins{
+    padding-left: 15%;
+    background-color: #4d4d54;
+}
+a{
+    color: white;
+}
+.top{
+    margin-top: 11%;
+}
+.social{
+    padding: 8% 5% 5% 8%;
+    float: left;
+    text-align: center;
+}
+.social .btn-outline-success:hover{
+    background-color: transparent;
+}
+
+/*mission*/
+.white{
+    background-color: #fff;
+    padding-top: 3.5%;
+    margin-top: 4%;
+    padding-bottom: 3.5%;
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1);
+}
+.bor{
+    border-left: solid 5px #28a745;
+}
+.bor h2, .bor p {
+    font-family: 'Lato', sans-serif;
+    color: #343a40;
+}
+/*slides*/
+.carousel-inner{
+    max-height: 700px;
+}
+/*video*/
+.video iframe{
+    max-width: 640px;
+    width: 100%;
+    max-height: 360px;
+    height: 100%;
+    min-height: 300px;
+    border: 1px solid #343a40;
+    box-shadow: 1px 1px 10px 0 #495057;
+}
+.featherlight-inner {
+    width: 640px;
+    height: 320px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*report it*/
+.dark{
+    /*background-color: #d5d5d5;*/
+    padding-top: 2.5%;
+    margin-top: 4%;
+    padding-bottom: 2.5%;
+}
+.butts{
+    border-left: 5px solid #28a745;
+}
+.butts li {
+    padding-bottom: 2%;
+    line-height: 2rem;
+
+}
+.butts li a{
+   padding: 2% 5%;
+    text-decoration: none;
+    margin-top: 2%;
+    color: #343a40;
+}
+.butts li a:hover{
+    color: #28a745;
+}
+.title{
+    font-size: 2rem;
+}
+.space{
+    padding-top: 4%;
+}
+/*foot*/
+.awards img{
+    width: 100%;
+    padding-top: 5%;
+}
+.awards{
+    text-align: center;
+
+}
+.green{
+    background-color: #343a40;
+    padding-top: 2.5%;
+    margin-top: 4%;
+    padding-bottom: 2.5%;
+    border-top: 5px solid #28a745;
+}
+.contact{
+    color: #fff;
+}
+.contact p{
+    padding-top: 3%;
+}
+.contact h2{
+    font-weight: 700;
+}
+
+.contact p a:hover {
+    color: #28a745;
+}
+#emailHelp{
+    color: #fff!important;
+}
+.email{
+    color: #fff;
+    font-size: 1.5rem;
+}
+/*about*/
+.about{
+    margin-top: 15%;
+}
+.tile{
+    text-align: center;
+    padding-bottom: 5%;
+}
+.tile img{
+    width: 100%;
+    max-width: 90%;
+}
+ul li h6{
+    font-weight: 700;
+}
+/*doante page*/
+.lol{
+    margin-top: 11%;
+}
+.no{
+    padding-left: 0;
+}
+.lilspace{
+    padding-top: 1%;
+}
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #28a745;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.35);
+}
+.yy{
+    visibility: hidden;
+}
+#amounts{
+    padding-left: 2%;
+}
+.down{
+    width: 100%;
+    display: inline;
+}
+label.error
+{
+    color: blue;
+    width: 300px;
+}
+.bold{
+    font-weight: 700;
+    padding-top: 4%;
+}
+.card-body a {
+    color: #000000;
+
+}
+.card{
+    margin-top: 5%;
+    box-shadow: 1px 1px 10px 0 #495057;
+}
+.issues{
+    padding-top: 10%;
+}
+.card h4 {
+    font-weight: 700;
+}
+
+
+
+@media (min-width: 576px) {
+    .navbar-side{
+        width: 75%;
+    }
+    .nav-ct{
+        padding-bottom: .5%;
+    }
+}
+@media (max-width: 576px) {
+    .navbar-side{
+        width: 75%;
+    }
+    .navbar-brand{
+        font-size: 3rem;
+    }
+    .navbar-brand p {
+        font-size: 2rem;
+    }
+    .nav-ct{
+        text-align: center;
+        padding-left: 11%;
+        padding-right: 0;
+    }
+    .logo{
+        width: 100%;
+        max-width: 96%;
+        position: relative;
+        top: 0;
+        left: 2%;
+        margin-right: 0;
+    }
+    .more{
+        text-align: end;
+        padding-bottom: 3.5vh;
+    }
+    .bg-dark {
+        border-bottom: 10px solid #28a745;
+    }
+    .pad{
+        padding: 0!important;
+    }
+    .awards{
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .awards img{
+        width: 100%;
+    }
+    .email{
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .contact{
+        padding-top: 5%;
+    }
+    .top{
+        margin-top: 4%;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .navbar-side{
+        width: 50%;
+    }
+}
+@media (max-width: 992px) {
+    .lol {
+        margin-top: 13%;
+    }
+}
+@media (min-width: 1124px) {
+    .more{
+        margin-right: 2%;
+    }
+}
+@media (max-width: 1124px) {
+    .more{
+        margin-right: 5%;
+    }
+}
+@media (min-width: 992px) {
+    .navbar-side{
+        width: 25%;
+    }
+    .pad{
+        padding-right: 0;
+    }
+}
+@media (max-width: 576px) {
+    .lol {
+        margin-top: 5%;
+    }
+}
+
+
+
+
+
+
+
+
