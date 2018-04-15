@@ -146,11 +146,6 @@ a:hover {
     right: 0;
     padding: 0;
     list-style: none;
-    /*border-left: 4px solid transparent;*/
-    /*border-image-source: url(../images/line-down.png);*/
-    /*border-image-repeat: repeat;*/
-    /*border-image-slice: 30;*/
-    /*border-image-width: 5px;*/
     background-color: #ffffff;
     overflow-y: scroll;
     z-index: 1000;
@@ -168,18 +163,23 @@ a:hover {
     border-image-width: 5px;
 }
 .card-body {
-     padding: 0;
+    padding: 0 0 3px 0;
 }
 .card-header {
     padding: 0 1.25rem;
 }
 
-/*.list-group-item:first-child{*/
-    /*border-top-right-radius: 0;*/
-/*}*/
-/*.list-group-item:last-child{*/
-    /*border-bottom-right-radius: 0;*/
-/*}*/
+.list-group-item:first-child{
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+.list-group-item:last-child{
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.list-group-item{
+    border: none;
+}
 .side-link {
     padding-left: 2rem;
 }
@@ -211,7 +211,7 @@ a:hover {
 }
 .padins{
     padding-left: 15%;
-    background-color: #4d4d54;
+    background-color: #b5b5b5;
 }
 a{
     color: white;
@@ -392,8 +392,12 @@ label.error
     padding-top: 4%;
 }
 .card-body a {
-    color: #28a745;
-
+    color: #000000;
+    transition: .3s background-color ease-out;
+}
+.card-body a:hover{
+    background-color: #28a745;
+    color: white;
 }
 .card {
     margin-top: 5%;
