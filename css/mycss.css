@@ -10,7 +10,6 @@ body {
 }
 ul{
     list-style-type: none;
-    padding-left: 0;
 }
 /*nav*/
 .container-fluid{
@@ -50,11 +49,14 @@ ul{
     line-height: 1.5;
     letter-spacing: .2rem;
     border-radius: .25rem;
-    transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out;
     background-color: transparent;
 }
 a:hover {
     text-decoration: none;
+}
+.btn:hover{
+    color: #28a745;
 }
 
 .menu{
@@ -144,23 +146,40 @@ a:hover {
     right: 0;
     padding: 0;
     list-style: none;
-    border-left: 5px solid #28a745;
+    /*border-left: 4px solid transparent;*/
+    /*border-image-source: url(../images/line-down.png);*/
+    /*border-image-repeat: repeat;*/
+    /*border-image-slice: 30;*/
+    /*border-image-width: 5px;*/
     background-color: #ffffff;
     overflow-y: scroll;
     z-index: 1000;
 }
 .navbar-side-item {
-    padding: 1.5rem 0;
+    padding: 0;
     margin: 0;
-    border-bottom: 2px solid #ccc;
-    height: 5rem;
 }
-.list-group-item:first-child{
-    border-top-right-radius: 0;
+.card{
+    border: 1px solid transparent;
+    padding: 0;
+    border-image-source: url(../images/line.png);
+    border-image-repeat: repeat;
+    border-image-slice: 30;
+    border-image-width: 5px;
 }
-.list-group-item:last-child{
-    border-bottom-right-radius: 0;
+.card-body {
+     padding: 0;
 }
+.card-header {
+    padding: 0 1.25rem;
+}
+
+/*.list-group-item:first-child{*/
+    /*border-top-right-radius: 0;*/
+/*}*/
+/*.list-group-item:last-child{*/
+    /*border-bottom-right-radius: 0;*/
+/*}*/
 .side-link {
     padding-left: 2rem;
 }
@@ -200,13 +219,22 @@ a{
 .top{
     margin-top: 11%;
 }
-.social{
-    padding: 8% 5% 5% 8%;
+.social {
     float: left;
-    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 10%;
 }
-.social .btn-outline-success:hover{
-    background-color: transparent;
+.less-margin-bt{
+    margin-bottom: 0;
+}
+.social a{
+    text-align: center;
+    color: black;
+    transition: color .3s ease-out;
+}
+.social a:hover{
+    color: #28a745;
 }
 
 /*mission*/
@@ -364,12 +392,12 @@ label.error
     padding-top: 4%;
 }
 .card-body a {
-    color: #000000;
+    color: #28a745;
 
 }
-.card{
+.card {
     margin-top: 5%;
-    box-shadow: 1px 1px 10px 0 #495057;
+    /*box-shadow: 1px 1px 10px 0 #303236;*/
 }
 .issues{
     padding-top: 10%;
