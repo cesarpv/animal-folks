@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC:700|Didact+Gothic');
-button{
+button {
     font-family: 'Amatic SC', cursive;
     font-weight: 700;
 }
+
 
 body {
     font-family: 'Didact Gothic', sans-serif;
@@ -172,6 +173,7 @@ a:hover {
 .list-group-item:first-child{
     border-top-right-radius: 0;
     border-top-left-radius: 0;
+
 }
 .list-group-item:last-child{
     border-bottom-right-radius: 0;
@@ -179,6 +181,10 @@ a:hover {
 }
 .list-group-item{
     border: none;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    font-size: 1.2rem;
 }
 .side-link {
     padding-left: 2rem;
