@@ -222,9 +222,7 @@ a:hover {
 a{
     color: white;
 }
-.top{
-    margin-top: 11%;
-}
+
 .social {
     float: left;
     margin-top: 5%;
@@ -252,17 +250,8 @@ a{
     opacity: 1;
     transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1);
 }
-.bor{
-    border-left: solid 5px #28a745;
-}
-.bor h2, .bor p {
-    font-family: 'Lato', sans-serif;
-    color: #343a40;
-}
-/*slides*/
-.carousel-inner{
-    max-height: 700px;
-}
+
+
 /*video*/
 .video iframe{
     max-width: 640px;
@@ -278,6 +267,46 @@ a{
     height: 320px;
     max-width: 100%;
     max-height: 100%;
+}
+/*carousel*/
+.carousel{
+    padding-top: 5%;
+}
+.main-img{
+    filter: brightness(75%);
+}
+.gradient{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.5));
+    z-index: 1;
+}
+.carousel-caption{
+    padding-bottom: 25%;
+   left: 0;
+    right: 0;
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.carousel-caption h1{
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    letter-spacing: .2rem;
+}
+.carousel-caption p {
+    font-family: 'Didact Gothic', sans-serif;
+    letter-spacing: .1rem;
+    text-align: justify;
+
+}
+.carousel-control-prev-icon {
+    background-image: url("../images/left.svg");
+}
+.carousel-control-next-icon {
+    background-image: url("../images/right.svg");
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 40px;
+    height: 40px;
 }
 
 /*report it*/
@@ -468,9 +497,6 @@ label.error
     }
     .contact{
         padding-top: 5%;
-    }
-    .top{
-        margin-top: 4%;
     }
 
 }
