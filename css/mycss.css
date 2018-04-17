@@ -4,7 +4,10 @@ button {
     font-weight: 700;
 }
 
-
+.row{
+    margin-right: 0;
+    margin-left: 0;
+}
 body {
     font-family: 'Didact Gothic', sans-serif;
     background: white;
@@ -305,7 +308,7 @@ a{
 
 .carousel-caption{
     padding-bottom: 25%;
-   left: 0;
+    left: 0;
     right: 0;
     max-width: 600px;
     margin-right: auto;
@@ -334,28 +337,7 @@ a{
 }
 
 /*report it*/
-.dark{
-    padding-top: 2.5%;
-    margin-top: 4%;
-    padding-bottom: 2.5%;
-}
-.butts{
-    border-left: 5px solid #28a745;
-}
-.butts li {
-    padding-bottom: 2%;
-    line-height: 2rem;
 
-}
-.butts li a{
-   padding: 2% 5%;
-    text-decoration: none;
-    margin-top: 2%;
-    color: #343a40;
-}
-.butts li a:hover{
-    color: #28a745;
-}
 .title{
     font-size: 2rem;
 }
@@ -459,7 +441,6 @@ label.error
 }
 .card {
     margin-top: 5%;
-    /*box-shadow: 1px 1px 10px 0 #303236;*/
 }
 .issues{
     padding-top: 10%;
