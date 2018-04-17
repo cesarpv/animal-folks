@@ -274,7 +274,14 @@ a{
 }
 .main-img{
     filter: brightness(75%);
-    -webkit-mask-image :-webkit-gradient(linear, left top,  left bottom, color-stop(70%,rgba(0,0,0,1)), color-stop(95%, rgba(0,0,0,0)));
+    -webkit-mask-image :
+            -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            color-stop(60%, rgb(255, 255, 255)),
+            color-stop(95%, rgba(0,0,0,0))
+    );
 }
 
 .carousel-caption{
