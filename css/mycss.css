@@ -337,13 +337,35 @@ a{
 }
 
 /*report it*/
-
 .title{
     font-size: 2rem;
 }
 .space{
     padding-top: 4%;
 }
+.card-title {
+    margin-top: .75rem;
+    text-align: center;
+}
+.report {
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    font-size: 3.5rem;
+    text-align: center;
+}
+.card-img-top {
+     border-top-left-radius: 0;
+     border-top-right-radius: 0;
+}
+.card-body h5{
+    color: black;
+}
+.cover:hover > .wobble{
+    -webkit-animation: wobble-hor-bottom 0.8s both;
+    animation: wobble-hor-bottom 0.8s both;
+}
+
 /*foot*/
 .awards img{
     width: 100%;
