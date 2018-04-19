@@ -22,7 +22,7 @@ ul{
 }
 
 .donate{
-    padding-right: 10%;
+    margin-right: 10%;
 }
 .shadow{
     text-shadow: #767676 2px 2px 10px;
@@ -365,7 +365,15 @@ a{
     -webkit-animation: wobble-hor-bottom 0.8s both;
     animation: wobble-hor-bottom 0.8s both;
 }
-
+/*freedoms*/
+.circle img{
+    max-width: 150px;
+}
+.circle h3{
+   text-align: center;
+    color: #28a745;
+    margin-top: 5%;
+}
 /*foot*/
 .awards img{
     width: 100%;
@@ -376,11 +384,7 @@ a{
 
 }
 .green{
-    background-color: #343a40;
-    padding-top: 2.5%;
-    margin-top: 4%;
-    padding-bottom: 2.5%;
-    border-top: 5px solid #28a745;
+   background-color: #28a745;
 }
 .contact{
     color: #fff;
