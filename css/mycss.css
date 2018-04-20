@@ -374,6 +374,27 @@ a{
     color: #28a745;
     margin-top: 5%;
 }
+
+/*newsletter*/
+.form-control{
+    /*font-family: 'Amatic SC', cursive;*/
+    font-size: 1.1rem;
+    letter-spacing: .2rem;
+    height: 60px;
+}
+.newsletter{
+    font-family: 'Amatic SC', cursive;
+    letter-spacing: .2rem;
+    color: white;
+    font-size: 3rem;
+}
+.sign-up{
+    border: 1px solid white;
+    height: 60px;
+}
+.form-row{
+    margin: 0;
+}
 /*foot*/
 .awards img{
     width: 100%;
@@ -536,9 +557,34 @@ label.error
         width: 50%;
     }
 }
+
 @media (max-width: 992px) {
     .lol {
         margin-top: 13%;
+    }
+    .newsletter{
+        margin-top: 10%;
+        font-size: 2rem;
+    }
+    .form-control, .sign-up{
+        height: 50px;
+    }
+    .form-box{
+        margin-top: .7%;
+    }
+    .sign-up{
+        margin-top: 5%;
+        padding: 0 5%;
+    }
+
+}
+@media (max-width: 767.98px) {
+    .newsletter{
+        margin-top: 0;
+        font-size: 2.5rem;
+    }
+    .form-box{
+        margin-top: 2%;
     }
 }
 @media (min-width: 1124px) {
