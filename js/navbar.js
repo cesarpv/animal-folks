@@ -1,18 +1,3 @@
-//removes animation when LOADED on mobile. must refresh window for testing
-(function($) {
-    var $window = $(window),
-        $html = $('.white, .green, .dark');
-
-    function resize() {
-        if ($window.width() < 576) {
-            return $html.removeClass('scrollme, animateme');
-        }
-    }
-    $window
-        .resize(resize)
-        .trigger('resize');
-})(jQuery);
-
 //lets you uncheck radio buttons
 var allRadios = document.getElementsByName('inlineRadioOptions');
 var booRadio;
@@ -32,22 +17,22 @@ for(x = 0; x < allRadios.length; x++){
 //nav var from fixed to not fixed
 $( document ).ready(function() {
 
-    $(window).resize(function () {
-        var viewportWidth = $(window).width();
-        if (viewportWidth < 576) {
-            $(".navbar").removeClass("fixed-top");
-        }if (viewportWidth > 576) {
-            $(".navbar").addClass("fixed-top");
-        }
-    });
-    $(window).on('load', function () {
-        var viewportWidth = $(window).width();
-        if (viewportWidth < 576) {
-            $(".navbar").removeClass("fixed-top");
-        } else {
-            $(".navbar").addClass("fixed-top");
-        }
-    });
+    // $(window).resize(function () {
+    //     var viewportWidth = $(window).width();
+    //     if (viewportWidth < 576) {
+    //         $(".navbar").removeClass("fixed-top");
+    //     }if (viewportWidth > 576) {
+    //         $(".navbar").addClass("fixed-top");
+    //     }
+    // });
+    // $(window).on('load', function () {
+    //     var viewportWidth = $(window).width();
+    //     if (viewportWidth < 576) {
+    //         $(".navbar").removeClass("fixed-top");
+    //     } else {
+    //         $(".navbar").addClass("fixed-top");
+    //     }
+    // });
 
 
     // Open navbarSide when button is clicked
@@ -64,7 +49,7 @@ $( document ).ready(function() {
 
 
 
-    $(':text:first').focus();
+    // $(':text:first').focus();
     $('#other').hide();
 
 //slides down radio and enables it

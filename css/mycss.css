@@ -292,7 +292,7 @@ a{
 }
 /*carousel*/
 .carousel{
-    padding-top: 5%;
+    padding-top: 7%;
 }
 .main-img{
     filter: brightness(75%);
@@ -334,6 +334,9 @@ a{
 .carousel-control-next-icon, .carousel-control-prev-icon {
     width: 40px;
     height: 40px;
+}
+.mission{
+    font-size: 3rem;
 }
 
 /*report it*/
@@ -642,8 +645,10 @@ label.error
         padding-left: 0;
     }
 }
-@media (min-width: 1124px) {
-
+@media (min-width: 1500px) {
+    .carousel{
+        padding-top: 5%;
+    }
 }
 @media (max-width: 1124px) {
 
@@ -666,6 +671,12 @@ label.error
     .menu{
         max-width: 20px;
         min-width: 20px;
+    }
+    .back{
+        padding: 0;
+    }
+    .news, .report{
+        font-size: 2.5rem;
     }
 }
 
