@@ -31,7 +31,7 @@ ul{
     width: 100%;
     max-width: 350px;
 }
-.pad{
+.back{
     background-color: white;
 }
 .more{
@@ -365,6 +365,10 @@ a{
     -webkit-animation: wobble-hor-bottom 0.8s both;
     animation: wobble-hor-bottom 0.8s both;
 }
+.card-deck{
+    margin-right: 0;
+    margin-left: 0;
+}
 /*freedoms*/
 .circle img{
     max-width: 150px;
@@ -395,38 +399,84 @@ a{
 .form-row{
     margin: 0;
 }
+.sign-up:hover{
+    color: white;
+    background-color: #b5b5b5;
+    border-color: #606c75;
+}
+.btn-primary:not([disabled]):not(.disabled).active, .btn-primary:not([disabled]):not(.disabled):active, .show>.btn-primary.dropdown-toggle{
+    color: white;
+    background-color: #b5b5b5;
+    border-color: #606c75;
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.18);
+}
+.btn-primary.focus, .btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.18);
+}
+.btn.focus, .btn:focus{
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.18);
+}
 /*foot*/
-.awards img{
-    width: 100%;
-    padding-top: 5%;
-}
-.awards{
-    text-align: center;
-
-}
 .green{
    background-color: #28a745;
+    margin-bottom: 0;
 }
-.contact{
-    color: #fff;
+.gray{
+    background-color: rgba(0, 0, 0, 0.8);
 }
-.contact p{
-    padding-top: 3%;
-}
-.contact h2{
-    font-weight: 700;
+.info{
+    font-family: 'Amatic SC', cursive;
+    letter-spacing: .2rem;
+    font-size: 1.5rem;
+    padding-left: 5%;
+    text-align: right;
 }
 
-.contact p a:hover {
+.small{
+    font-size: 16px;
+}
+.awards img{
+    max-width: 150px;
+    max-height: 100px;
+    margin-bottom: 10%;
+}
+.more-left{
+    padding-left: 5%;
+}
+.pad{
+    padding-top: 5%;
+}
+.pad-bot{
+    padding-bottom: 5%;
+}
+.color{
+    color: lightgray;
+    text-transform: uppercase;
+}
+.list{
+    padding-left: 20px;
+}
+.list li a{
+    color: white;
+}
+.list li a:hover{
     color: #28a745;
 }
-#emailHelp{
-    color: #fff!important;
+.list li{
+    line-height: 2rem;
+    font-size: 1.1rem;
 }
-.email{
-    color: #fff;
-    font-size: 1.5rem;
+
+.info li{
+    line-height: 2rem;
 }
+.info li a {
+    color: white;
+}
+.info li a:hover {
+    color: #28a745;
+}
+
 /*about*/
 .about{
     margin-top: 15%;
@@ -532,16 +582,11 @@ label.error
     .bg-dark {
         border-bottom: 10px solid #28a745;
     }
-    .pad{
-        padding: 0!important;
-    }
     .awards{
         padding-top: 5%;
         padding-bottom: 5%;
     }
-    .awards img{
-        width: 100%;
-    }
+
     .email{
         padding-top: 5%;
         padding-bottom: 5%;
@@ -585,6 +630,16 @@ label.error
     }
     .form-box{
         margin-top: 2%;
+    }
+    .info{
+        text-align: left;
+    }
+    .more-left h4, .list{
+       text-align: center;
+        align-content: center;
+    }
+    .list {
+        padding-left: 0;
     }
 }
 @media (min-width: 1124px) {
