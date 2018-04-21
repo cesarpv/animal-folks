@@ -558,8 +558,13 @@ label.error
 .card {
     margin-top: 5%;
 }
+
+/*issues page*/
+.card-title:hover{
+    color: #28a745;
+}
 .issues{
-    padding-top: 10%;
+    margin-top: 10%;
 }
 .card h4 {
     font-weight: 700;
@@ -663,7 +668,7 @@ label.error
     .list {
         padding-left: 0;
     }
-    .about{
+    .about, .issues{
         margin-top: 15%;
     }
 }
@@ -697,6 +702,7 @@ label.error
     .news, .report,.donate-title{
         font-size: 2.5rem;
     }
+
 }
 
 
