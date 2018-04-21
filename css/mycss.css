@@ -482,18 +482,14 @@ a{
 
 /*about*/
 .about{
-    margin-top: 15%;
-}
-.tile{
-    text-align: center;
-    padding-bottom: 5%;
-}
-.tile img{
-    width: 100%;
-    max-width: 90%;
+    margin-top: 10%;
 }
 ul li h6{
     font-weight: 700;
+}
+.fox{
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 /*doante page*/
 .lol{
@@ -666,6 +662,9 @@ label.error
     }
     .list {
         padding-left: 0;
+    }
+    .about{
+        margin-top: 15%;
     }
 }
 @media (min-width: 1500px) {
