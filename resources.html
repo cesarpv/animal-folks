@@ -18,85 +18,143 @@
 <!--start nav-->
 
 <div class="container-fluid">
-    <nav class="navbar fixed-top navbar-light navbar-static bg-dark row pad" role="navigation">
-        <div class="col col-sm-2 col-md-2 nav-ct">
-            <a class="navbar-brand text-white" href="index.html">ANIMAL FOLK <br> <p>MINNESOTA</p></a>
+    <nav class="navbar fixed-top navbar-static row back" role="navigation">
+        <div class=" col col-sm-4 col-md-4">
+            <a class="logo" href="index.html"><img class="logo" src="images/logo-black.svg" alt=""></a>
         </div>
-        <a class="navbar-brand logo" href="index.html">
-            <img src="images/animallogoeyes.svg" alt="logo">
-        </a>
 
 
-        <div class="col col-sm-4 col-md-3 col-lg-2 col-xl-2 more">
-            <div class="nav navbar-nav d-inline-flex flex-row flex-nowrap">
-                <form class=" my-lg-0 donate">
-                    <a href="donate.html"><button class="btn btn-outline-success" type="button">Donate</button></a>
-                </form>
+        <div class="col col-sm-4 col-md-4 more">
+            <div class="nav navbar-nav d-flex justify-content-end flex-row flex-nowrap">
+                <div class="wobble donate">
+                    <form class=" my-lg-0">
+                        <a href="donate.html"><button class="btn" type="button">DONATE</button></a>
+                    </form>
+                </div>
                 <!-- insert more nav-items if you so choose -->
-                <form class=" my-lg-0">
-                    <button class="btn btn-outline-success" id="navbarSideButton" type="button"><i class="fa fa-align-right fa-lg" aria-hidden="true"></i></button>
+                <form class=" my-lg-0 wobble">
+                    <button class="btn" id="navbarSideButton" type="button">
+                        <img class="menu" src="images/menu.svg" alt="menu">
+                    </button>
                 </form>
             </div>
         </div>
 
         <!-- navbar-side will go here -->
-        <ul class="navbar-side" id="navbarSide">
+        <div class="navbar-side" id="navbarSide">
 
-            <div class="list-group panel navbar-side-item">
+            <div class="navbar-side-item" id="accordion">
 
-                <a href="aboutus.html" class="list-group-item collapsed btn-outline-success" data-parent="#sidebar"
-                   aria-expanded="false"><i class="fa fa-hand-o-right"></i>&nbsp; <span class="hidden-sm-down">About Us</span></a>
+                <div class="card">
+                    <div class="card-header" id="heading">
+                        <h5 class="mb-0">
+                            <a href="aboutus.html"><button class="btn" aria-expanded="true">About</button></a>
+                        </h5>
+                    </div>
+                </div>
 
-                <a href="#" class="list-group-item collapsed btn-outline-success" data-parent="#sidebar" data-toggle="collapse" data-target="#menu1"><i class="fa fa-film"></i>&nbsp; <span class="hidden-sm-down">Action</span></a>
-                <div class="collapse" id="menu1">
-                    <a href="#" class="list-group-item btn-outline-success padins" data-parent="#menu1">Legislators </a>
-                    <a href="#" class="list-group-item btn-outline-success padins" data-parent="#menu1">Contact the Press</a>
-                    <a href="#" class="list-group-item btn-outline-success padins" data-parent="#menu1">Spread the Word</a>
-                    <a href="#" class="list-group-item btn-outline-success padins" data-parent="#menu1">Report it</a>
-                    <a href="#" class="list-group-item btn-outline-success padins" data-parent="#menu1">Protest</a>
-                    <a href="#" class="list-group-item btn-outline-success padins" data-parent="#menu1">Your Story</a>
+
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Action</button>
+                        </h5>
+                    </div>
+
+
+
+
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <a href="#" class="list-group-item padins" data-parent="#menu1">Legislators </a>
+                            <a href="#" class="list-group-item padins" data-parent="#menu1">Contact the Press</a>
+                            <a href="#" class="list-group-item padins" data-parent="#menu1">Spread the Word</a>
+                            <a href="#" class="list-group-item padins" data-parent="#menu1">Report it</a>
+                            <a href="#" class="list-group-item padins" data-parent="#menu1">Protest</a>
+                            <a href="#" class="list-group-item padins" data-parent="#menu1">Your Story</a>
+                        </div>
+                    </div>
                 </div>
-                <a href="#" class="list-group-item collapsed btn-outline-success" data-toggle="collapse" data-parent="#sidebar" data-target="#menu2" aria-expanded="false"><i class="fa fa-book"></i>&nbsp; <span class="hidden-sm-down">Resources </span></a>
-                <div class="collapse" id="menu2">
-                    <a href="resources.html" class="list-group-item btn-outline-success padins" data-parent="#menu2">Videos</a>
-                    <a href="#" class="list-group-item btn-outline-success padins" data-parent="#menu2">News & Archives</a>
-                    <a href="#" class="list-group-item btn-outline-success padins" data-parent="#menu2">Lawsuits</a>
-                    <a href="#" class="list-group-item btn-outline-success padins" data-parent="#menu2">Cruelty Cases</a>
-                    <a href="#" class="list-group-item btn-outline-success padins" data-parent="#menu2">Scientific Studies</a>
-                    <a href="#" class="list-group-item btn-outline-success padins" data-parent="#menu2">Other Organizations</a>
+
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Resources</button>
+                        </h5>
+                    </div>
+
+
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            <a href="resources.html" class="list-group-item btn-outline-success padins" data-parent="#menu2">Videos</a>
+                            <a href="#" class="list-group-item padins" data-parent="#menu2">News & Archives</a>
+                            <a href="#" class="list-group-item padins" data-parent="#menu2">Lawsuits</a>
+                            <a href="#" class="list-group-item padins" data-parent="#menu2">Cruelty Cases</a>
+                            <a href="#" class="list-group-item padins" data-parent="#menu2">Scientific Studies</a>
+                            <a href="#" class="list-group-item padins" data-parent="#menu2">Other Organizations</a>
+                        </div>
+                    </div>
                 </div>
-                <a href="#" class="list-group-item collapsed btn-outline-success" data-toggle="collapse" data-target="#menu3" data-parent="#sidebar"><i class="fa fa-fort-awesome" aria-hidden="true"></i>&nbsp;<span class="hidden-sm-down">Legislation</span></a>
-                <div class="collapse" id="menu3">
-                    <a href="#" class="list-group-item btn-outline-success padins" data-parent="#menu3">Governance</a>
-                    <a href="#" class="list-group-item btn-outline-success padins" data-parent="#menu3">State Bills</a>
-                    <a href="#" class="list-group-item btn-outline-success padins" data-parent="#menu3">Animal Law</a>
-                    <a href="#" class="list-group-item btn-outline-success padins" data-parent="#menu3">Minnesota laws</a>
-                    <a href="#" class="list-group-item btn-outline-success padins" data-parent="#menu3">Animal Welfare Act</a>
-                    <a href="#" class="list-group-item btn-outline-success padins" data-parent="#menu3">Federal</a>
+
+
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Legislature</button>
+                        </h5>
+                    </div>
+
+
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            <a href="#" class="list-group-item padins" data-parent="#menu3">Governance</a>
+                            <a href="#" class="list-group-item padins" data-parent="#menu3">State Bills</a>
+                            <a href="#" class="list-group-item padins" data-parent="#menu3">Animal Law</a>
+                            <a href="#" class="list-group-item padins" data-parent="#menu3">Minnesota laws</a>
+                            <a href="#" class="list-group-item padins" data-parent="#menu3">Animal Welfare Act</a>
+                            <a href="#" class="list-group-item padins" data-parent="#menu3">Federal Law</a>
+                        </div>
+                    </div>
                 </div>
-                <a href="#" class="list-group-item collapsed btn-outline-success" data-toggle="collapse" data-target="#menu4" data-parent="#sidebar"><i class="fa fa-clock-o"></i>&nbsp; <span class="hidden-sm-down">Issues</span></a>
-                <div class="collapse" id="menu4">
-                    <a href="issues.html" class="list-group-item btn-outline-success padins" data-parent="#menu4">Overview</a>
-                    <a href="#" class="list-group-item btn-outline-success padins" data-parent="#menu4">Puppy and Kitty Mills</a>
-                    <a href="#" class="list-group-item btn-outline-success padins" data-parent="#menu4">Quick links</a>
-                    <a href="#" class="list-group-item btn-outline-success padins" data-parent="#menu4">Commercial Breeders</a>
-                    <a href="#" class="list-group-item btn-outline-success padins" data-parent="#menu4">Pet Stores</a>
-                    <a href="#" class="list-group-item btn-outline-success padins" data-parent="#menu4">Auctions</a>
+
+
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h5 class="mb-0">
+                            <button class="btn collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Issues</button>
+                        </h5>
+                    </div>
+
+
+                    <div  id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                        <div class="card-body">
+                            <a href="issues.html" class="list-group-item btn-outline-success padins" data-parent="#menu4">Overview</a>
+                            <a href="#" class="list-group-item padins" data-parent="#menu4">Puppy and Kitty Mills</a>
+                            <a href="#" class="list-group-item padins" data-parent="#menu4">Quick links</a>
+                            <a href="#" class="list-group-item padins" data-parent="#menu4">Commercial Breeders</a>
+                            <a href="#" class="list-group-item padins" data-parent="#menu4">Pet Stores</a>
+                            <a href="#" class="list-group-item padins" data-parent="#menu4">Auctions</a>
+                        </div>
+                    </div>
                 </div>
-                <ul>
-                    <li class="social ">
-                        <a href="#" data-parent="#sidebar"><i class="fa fa-facebook-official fa-2x btn-outline-success" aria-hidden="true"></i></a>
-                    </li>
-                    <li class="social ">
-                        <a href="#" data-parent="#sidebar"><i class="fa fa-twitter-square fa-2x btn-outline-success" aria-hidden="true"></i></a>
-                    </li>
-                    <li class="social ">
-                        <a href="#" data-parent="#sidebar"><i class="fa fa-linkedin-square fa-2x btn-outline-success" aria-hidden="true"></i></a>
-                    </li>
-                </ul>
+
+                <div class="card">
+                    <ul class="less-margin-bt">
+                        <li class="social">
+                            <a href="#"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="social">
+                            <a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="social">
+                            <a href="#"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
 
-        </ul>
+        </div>
         <div class="overlay"></div>
     </nav>
 </div>
@@ -104,24 +162,27 @@
 <!--end nav-->
 
 <!--mission-->
-<div class="container about">
+<div class="container about pad-bot">
     <div class="row">
+        <div class="col-12">
+            <h1 class="news">Video</h1>
+        </div>
         <div class="col-sm-6">
-            <h3>Resources</h3>
+            <h2>Resources</h2>
             <p>There is photo and video documentation of puppy mills throughout the United States, as well as documentation of dog auctions and pet store conditions where puppies are bought and sold. Many commercial breeding facilities, however, are hidden from view. As kennels are private property, consumers are often not allowed on-site to assess conditions.
                 The inhumanity within the breeding industry is not just due to problematic breeding conditions. It is also due to the fact that "mass" breeding creates unwanted dogs and cats who, if abandoned later and are not adopted, may be euthanized by pounds or shelters. Please view video below.</p>
             <a href="#">In Hope, An Animal Shelter Story</a>
-            <h5 class="bold">Note</h5>
+            <h2 class="bold">WARNING</h2>
             <p>Please be aware that many of the links below contain graphic images. Below is just a small sample of videos — numerous videos can be found on the Internet.</p>
         </div>
         <div class="col-sm-6">
-            <h3>Video Documentation</h3>
+            <h2>Video Documentation</h2>
             <ul>
                 <li>
                     <a href="https://www.youtube.com/embed/jjWDUAiiuiE" data-featherlight="iframe">Thorp Dog Auction Part 1 (Wisconsin)</a>
                 </li>
                 <li>
-                    <a href="https://www.youtube.com/results?search_query=amish+dog+auctions">Videos of multiple dog auctions</a>
+                    <a target="_blank" href="https://www.youtube.com/results?search_query=amish+dog+auctions" >Videos of multiple dog auctions</a>
                 </li>
                 <li>
                     <a href="https://www.youtube.com/embed/m58VZkB_wKw" data-featherlight="iframe">CAPS: Pick Of The Litter investigation part 1 of 2 </a>
@@ -136,19 +197,19 @@
                     <a href="#">Sharon Lanz (2005)</a>
                 </li>
                 <li>
-                    <a href="http://www.caps-web.org/index.php?option=com_k2&view=item&id=190&Itemid-269">Happy Tails, Gary & Wanda McDuffee (2005)</a>
+                    <a target="_blank" href="http://www.caps-web.org/index.php?option=com_k2&view=item&id=190&Itemid-269">Happy Tails, Gary & Wanda McDuffee (2005)</a>
                 </li>
                 <li>
-                    <a href="http://www.caps-web.org/index.php?option=com_k2&view=item&id=250&Itemid=269">Angie & Gerry Wensmann (2005), MN breeders</a>
+                    <a target="_blank" href="http://www.caps-web.org/index.php?option=com_k2&view=item&id=250&Itemid=269">Angie & Gerry Wensmann (2005), MN breeders</a>
                 </li>
                 <li>
-                    <a href="http://www.caps-web.org/index.php?option=com_k2&view=item&id=249&Itemid=269">Ruben Wee (2005)</a>
+                    <a target="_blank" href="http://www.caps-web.org/index.php?option=com_k2&view=item&id=249&Itemid=269">Ruben Wee (2005)</a>
                 </li>
                 <li>
                     <a href="https://www.youtube.com/embed/flDK74ZkURk" data-featherlight="iframe">Minnesota: Puppies at Elite Animals (pet store) traced back to Minnesota breeder</a>
                 </li>
                 <li>
-                    <a href="http://www.dailymotion.com/video/x1408o">PETA: Undercover investigation of a puppy mill</a>
+                    <a target="_blank" href="http://www.dailymotion.com/video/x1408o">PETA: Undercover investigation of a puppy mill</a>
                 </li>
                 <li>
                     <a href="https://www.youtube.com/embed/50e_ajpSwLM?" data-featherlight="iframe"> HSUS: Pet store investigation</a>
@@ -160,32 +221,78 @@
 </div>
 <!--end mission-->
 <!--foot-->
-<div class="green">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4">
-                <form>
-                    <div class="form-group">
-                        <label class="email" for="exampleInputEmail1">News Letter</label>
-                        <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                    </div>
-                    <button type="submit" class="btn btn-outline-success">Submit</button>
-                </form>
-            </div>
-            <div class="col-sm-2 awards">
-                <img src="images/Council-Meets-Standards-Seal-300x224.png" alt="">
-            </div>
-            <div class="col-sm-2 awards">
-                <img src="images/GX-Gold-Participant-L.png" alt="">
-            </div>
-            <div class="col-sm-4 contact">
-                <h2>Contact Us</h2>
-                <p><a href="">1043 Grant Ave # 115St Paul MN 55105</a></p>
-                <p><a href="">info@animalfolk.org</a></p>
-                <p><a href="">651-222-2821</a></p>
-            </div>
+<div class="gray">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row pad">
+                <div class="col-md-3 more-left">
+                    <h4 ><a class="color" href="">About Us</a></h4>
+                    <ul class="list">
+                        <li><a href="">Mission</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Donate</a></li>
+                        <li><a href="">Plant Sale</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 more-left">
+                    <h4><a class="color" href="">Legislature</a></h4>
+                    <ul class="list">
+                        <li><a href="">Governace</a></li>
+                        <li><a href="">State Bills</a></li>
+                        <li><a href="">Animal Law</a></li>
+                        <li><a href="">Minnesota Law</a></li>
+                        <li><a href="">Animal Welfare</a></li>
+                        <li><a href="">Federal Law</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 more-left">
+                    <h4><a class="color" href="">Resources</a></h4>
+                    <ul class="list">
+                        <li><a href="">Videos</a></li>
+                        <li><a href="">News & Archives</a></li>
+                        <li><a href="">Lawsuits</a></li>
+                        <li><a href="">Cruelty Cases</a></li>
+                        <li><a href="">Scientific Studies</a></li>
+                        <li><a href="">Other Organizations</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 more-left">
+                    <h4><a class="color" href="">Action</a></h4>
+                    <ul class="list">
+                        <li><a href="">Legislators</a></li>
+                        <li><a href="">Contact The Press</a></li>
+                        <li><a href="">Spread The Word</a></li>
+                        <li><a href="">Protest</a></li>
+                        <li><a href="">Your Story</a></li>
+                    </ul>
+                </div>
 
+            </div>
+            <div class="row pad pad-bot">
+                <div class="col-md-4 more-left">
+                    <h4><a class="color" href="">Issues</a></h4>
+                    <ul class="list">
+                        <li><a href="">Overview</a></li>
+                        <li><a href="">Puppy & Kitty Mills</a></li>
+                        <li><a href="">Quick Links</a></li>
+                        <li><a href="">Commercial</a></li>
+                        <li><a href="">Pet Stores</a></li>
+                        <li><a href="">Auctions</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 awards d-flex justify-content-center align-items-end">
+                    <img class="img-fluid mx-auto" src="images/Council-Meets-Standards-Seal-300x224.png" alt="">
+                    <img class="img-fluid mx-auto" src="images/GX-Gold-Participant-L.png" alt="">
+                </div>
+                <div class="col-md-4 d-flex justify-content-center align-items-end">
+                    <ul class="info">
+                        <li><a href="">Animal Folks Minnesota</a></li>
+                        <li><a href="">1043 Grand Avenue, #115<br>St. Paul, MN. 55105</a></li>
+                        <li><a href="">info@animalfolksmn.org</a></li>
+                        <li><a class="small" href="">©Cesar Perez Veliz</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </div>
