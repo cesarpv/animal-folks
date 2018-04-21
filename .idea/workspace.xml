@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab6874cb-22d3-46b2-9b16-1168088b5835" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/mycss.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/mycss.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/donate.html" beforeDir="false" afterPath="$PROJECT_DIR$/donate.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/navbar.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,9 +31,24 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="177" column="39" selection-start-line="177" selection-start-column="39" selection-end-line="177" selection-end-column="39" />
-              <caret line="185" column="39" selection-start-line="185" selection-start-column="39" selection-end-line="185" selection-end-column="39" />
+            <state relative-caret-position="297">
+              <caret line="166" column="31" selection-start-line="166" selection-start-column="31" selection-end-line="166" selection-end-column="31" />
+              <folding>
+                <element signature="n#div#6;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="donate.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/donate.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="185">
+              <caret line="163" column="24" selection-start-line="163" selection-start-column="24" selection-end-line="163" selection-end-column="24" />
+              <folding>
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -40,8 +56,8 @@
       <file leaf-file-name="mycss.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/mycss.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="338" column="20" lean-forward="true" selection-start-line="338" selection-start-column="20" selection-end-line="338" selection-end-column="20" />
+            <state relative-caret-position="454">
+              <caret line="464" column="17" lean-forward="true" selection-start-line="464" selection-start-column="17" selection-end-line="464" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -61,8 +77,14 @@
       <find>.dar</find>
       <find>.wobb</find>
       <find>.gree</find>
-      <find>.awa</find>
       <find>pad</find>
+      <find>.awa</find>
+      <find>.lilspa</find>
+      <find>updates</find>
+      <find>repo</find>
+      <find>space</find>
+      <find>donate-ti</find>
+      <find>margin-top: 0</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -77,6 +99,7 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/js/navbar.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/donate.html" />
         <option value="$PROJECT_DIR$/css/mycss.css" />
       </list>
     </option>
@@ -94,7 +117,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="350" />
-    <option name="y" value="53" />
+    <option name="y" value="52" />
     <option name="width" value="1292" />
     <option name="height" value="976" />
   </component>
@@ -109,6 +132,11 @@
             <path>
               <item name="animal-folks" type="b2602c69:ProjectViewProjectNode" />
               <item name="animal-folks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="animal-folks" type="b2602c69:ProjectViewProjectNode" />
+              <item name="animal-folks" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="animal-folks" type="b2602c69:ProjectViewProjectNode" />
@@ -160,15 +188,15 @@
       <workItem from="1523736629804" duration="23159000" />
       <workItem from="1523927968973" duration="12320000" />
       <workItem from="1524033120615" duration="16459000" />
-      <workItem from="1524190784198" duration="14928000" />
+      <workItem from="1524190784198" duration="19787000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78313000" />
+    <option name="totallyTimeSpent" value="83172000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="350" y="53" width="1292" height="976" extended-state="0" />
+    <frame x="350" y="52" width="1292" height="976" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -221,6 +249,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5984">
           <caret line="374" column="6" lean-forward="true" selection-start-line="374" selection-start-column="6" selection-end-line="374" selection-end-column="6" />
+          <folding>
+            <element signature="n#div#6;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -386,11 +417,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/images/piggy.html" />
-    <entry file="file://$PROJECT_DIR$/donate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-614" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/navbar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -398,18 +424,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/images/dog2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/fatfox.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/fox.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/sad.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="177" column="39" selection-start-line="177" selection-start-column="39" selection-end-line="177" selection-end-column="39" />
-          <caret line="185" column="39" selection-start-line="185" selection-start-column="39" selection-end-line="185" selection-end-column="39" />
+        <state relative-caret-position="297">
+          <caret line="166" column="31" selection-start-line="166" selection-start-column="31" selection-end-line="166" selection-end-column="31" />
+          <folding>
+            <element signature="n#div#6;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/donate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="163" column="24" selection-start-line="163" selection-start-column="24" selection-end-line="163" selection-end-column="24" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/mycss.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="338" column="20" lean-forward="true" selection-start-line="338" selection-start-column="20" selection-end-line="338" selection-end-column="20" />
+        <state relative-caret-position="454">
+          <caret line="464" column="17" lean-forward="true" selection-start-line="464" selection-start-column="17" selection-end-line="464" selection-end-column="17" />
         </state>
       </provider>
     </entry>

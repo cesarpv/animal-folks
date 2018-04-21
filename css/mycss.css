@@ -450,7 +450,7 @@ a{
     padding-top: 5%;
 }
 .pad-bot{
-    padding-bottom: 5%;
+    padding-bottom: 2%;
 }
 .color{
     color: lightgray;
@@ -498,6 +498,7 @@ ul li h6{
 /*doante page*/
 .lol{
     margin-top: 11%;
+    padding-bottom: 5%;
 }
 .no{
     padding-left: 0;
@@ -515,6 +516,25 @@ ul li h6{
 .yy{
     visibility: hidden;
 }
+.donate-but{
+    border-color: #28a745;
+}
+.donate-title{
+    background-color: transparent;
+    border-bottom: none;
+}
+.donate-title h1 {
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    font-size: 3.5rem;
+}
+.pigs{
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 6%;
+}
+
 #amounts{
     padding-left: 2%;
 }
@@ -524,7 +544,7 @@ ul li h6{
 }
 label.error
 {
-    color: blue;
+    color: #28a745;
     width: 300px;
 }
 .bold{
@@ -547,6 +567,9 @@ label.error
 }
 .card h4 {
     font-weight: 700;
+}
+.no-top{
+    margin-top: 0;
 }
 
 
@@ -662,9 +685,6 @@ label.error
     }
 }
 @media (max-width: 576px) {
-    .lol {
-        margin-top: 5%;
-    }
     .btn{
         font-size: 1.5rem;
     }
@@ -675,7 +695,7 @@ label.error
     .back{
         padding: 0;
     }
-    .news, .report{
+    .news, .report,.donate-title{
         font-size: 2.5rem;
     }
 }
