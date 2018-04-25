@@ -58,6 +58,7 @@ ul{
 }
 a:hover {
     text-decoration: none;
+    color: #905af1;
 }
 .btn:hover{
     color: #28a745;
@@ -365,10 +366,24 @@ a{
 }
 .card-body h5{
     color: black;
+    transition: .3s ease-in-out;
 }
-.cover:hover > .wobble{
-    -webkit-animation: wobble-hor-bottom 0.8s both;
-    animation: wobble-hor-bottom 0.8s both;
+
+.cover img{
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+    position: relative;
+}
+
+.cover:hover img{
+    -webkit-transform: translate3d(0px, -10px, 0px);
+    transform: translate3d(0px, -10px, 0px);
+    filter: grayscale(100%);
+}
+.cover:hover h5{
+    color: #28a745;
 }
 .card-deck{
     margin-right: 0;
@@ -390,6 +405,7 @@ a{
     font-size: 1.1rem;
     letter-spacing: .2rem;
     height: 60px;
+    border-radius: 2.25rem;
 }
 .newsletter{
     font-family: 'Amatic SC', cursive;
@@ -398,16 +414,18 @@ a{
     font-size: 3rem;
 }
 .sign-up{
-    border: 1px solid white;
+    border-radius: 2.25rem;
+    border: 2px solid #b8e2c0;;
     height: 60px;
+    transition: .2s ease-in-out;
 }
 .form-row{
     margin: 0;
 }
 .sign-up:hover{
     color: white;
-    background-color: #b5b5b5;
-    border-color: #606c75;
+    background-color: #1a7930;
+    border-color: #f5f5f5;
 }
 .btn-primary:not([disabled]):not(.disabled).active, .btn-primary:not([disabled]):not(.disabled):active, .show>.btn-primary.dropdown-toggle{
     color: white;
@@ -455,16 +473,21 @@ a{
     padding-bottom: 2%;
 }
 .color{
-    color: lightgray;
+    color: #e2e2e2;
     text-transform: uppercase;
+    transition: color .2s ease-in-out;
+}
+.color:hover{
+    color:#28a745;
 }
 .list{
     padding-left: 20px;
 }
-.list li a{
+.list li a, .info li a{
     color: white;
+    transition: color .2s ease-in-out;
 }
-.list li a:hover{
+.list li a:hover, .info li a:hover{
     color: #28a745;
 }
 .list li{
@@ -475,12 +498,13 @@ a{
 .info li{
     line-height: 2rem;
 }
-.info li a {
-    color: white;
-}
-.info li a:hover {
-    color: #28a745;
-}
+/*.info li a {*/
+    /*color: white;*/
+    /*transition: color .2s ease-in-out;*/
+/*}*/
+/*.info li a:hover {*/
+    /*color: #28a745;*/
+/*}*/
 
 /*about*/
 .about{
@@ -515,6 +539,10 @@ ul li h6{
     visibility: hidden;
 }
 .donate-but{
+    border-radius: 2.25rem;
+    border: 2px solid;
+    height: 60px;
+    transition: .2s ease-in-out;
     border-color: #28a745;
 }
 .donate-title{
