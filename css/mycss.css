@@ -76,6 +76,8 @@ a:hover {
 .wobble:hover {
     -webkit-animation: wobble-hor-bottom 0.8s both;
     animation: wobble-hor-bottom 0.8s both;
+    animation-delay: .3s;
+    -webkit-animation-delay: .3s;
 }
 @-webkit-keyframes wobble-hor-bottom {
     0%,
