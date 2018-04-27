@@ -507,7 +507,7 @@ p{
     color: white;
     transition: color .2s ease-in-out;
 }
-.list li a:hover, .info li a:hover{
+.list li a:hover, .info li a:hover, .foot-social li a:hover{
     color: #60be5f;
 }
 .list li{
@@ -522,6 +522,7 @@ p{
 .foot-logo{
     max-width: 450px;
     width: 100%;
+    margin-bottom: 2%;
 }
 .dark{
     background-color: rgba(0, 0, 0, 0.4);
@@ -530,7 +531,6 @@ p{
     padding-left: 0;
 }
 .foot-social li{
-    margin-top: 20%;
     padding: 20px;
 }
 
@@ -692,6 +692,15 @@ label.error
 @media (min-width: 768px) {
     .navbar-side{
         width: 50%;
+    }
+    .foot-logo{
+        margin-right: 5%;
+    }
+    .foot-social li{
+        margin-top: 20%;
+    }
+    .awards img{
+        margin-right: auto;
     }
 }
 
