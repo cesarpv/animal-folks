@@ -403,7 +403,7 @@ p{
     transform: translate3d(0px, -10px, 0px);
     filter: grayscale(100%);
 }
-.cover:hover h5{
+.cover:hover h5, .cover:hover a h4{
     color: #28a745;
 }
 .card-deck{
@@ -578,7 +578,8 @@ ul li h6{
     border-color: #28a745;
 }
 .donate-but:hover{
-    background-color: #4c4c4c;
+    background-color: #28a745;
+    color: white;
 }
 .donate-title{
     background-color: transparent;
